@@ -1,0 +1,62 @@
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    padding: 2opx;
+}
+
+form{
+    margin-top: 50px;
+}
+ 
+div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label, input, button{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label{
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+input{
+    flex:auto;
+}
+
+error-output{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+@media only screen and (max-width:360px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+        background-color: green;
+    }
+    label{
+        width: 40%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:360px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+        background-color: Yellow;
+    }
+}
+
+

@@ -1,0 +1,40 @@
+node -v
+npm -v
+
+
+npm install -g json-server
+json-server -v
+nano empDB.json
+
+json-server --watch empDB.json
+
+  Resources
+  http://localhost:3000/employees
+
+
+	new window:
+curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employees"
+curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employees/4"
+
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"Name":"Vishal","Salary":"98000"}' "http://localhost:3000/employees"
+curl -X XPUT -H "Content-Type:application/json" -d '{"Name":"Vishal","Salary":"50000"}' "http://localhost:3000/employees"
+
+curl -X DELETE -H "Content-Type: application/json" "http://localhost:3000/employees/10"
+
+json-server --port 4000 --routes routes.json --watch empDB.json
+
+curl -X GET -H "Content-Type: application/json" "http://localhost:4000/employees/list"
+
+curl -X GET -H "Content-Type: application/json" "http://localhost:4000/employees/get/1"
+
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Lisa","salary": "2000"}'
+"http://localhost 4000/employees/create"
+
+curl -XPUT -H "Content-Type: application/json" -d '{"name": "Lisa", "salary": "8000"}'
+"http://localhost:4000/emloyees/update/4"
+
+curl -XDELETE -H "Content-Type: application/json" "http://localhost:4000/employees/delete/4"
+
+curl -GET -H "Content-Type: application/json" "http://localhost:4000/employees/list"

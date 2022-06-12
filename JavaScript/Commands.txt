@@ -1,0 +1,12 @@
+
+npm install -g node-inspect
+node-inspect -v
+
+
+
+node add.js
+node inspect add.js
+
+
+//chrome dev
+chrome://inspect/#devices
