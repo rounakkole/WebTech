@@ -69,7 +69,7 @@ class Contact{
 }
 
 try{
-    let contactObj = new Contact("rahul","Sharma","541/2 MG Road","Pune","Maharashtra",123456,"91 9876543210","rahulsharma21@gmail.com");
+    let contactObj = new Contact("Rahul","Sharma","541/2 MG Road","Pune","Maharashtra",123456,"91 9876543210","rahulsharma21@gmail.com");
     console.log(contactObj.toString());
 }
 catch (ex){
